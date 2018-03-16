@@ -1,0 +1,209 @@
+.container-fluid{
+	width: 100%;
+	margin: 0;
+}
+.container{
+	width: 500px;
+	background-color: #E9E9E9;
+	height: 2000px;
+	margin-left:20px;
+	padding-left:20px;
+	h2,h4{
+			padding:20px 0  20px 0 ;
+			font-family: 'Squada One', cursive;
+			color:#7B7B7B;
+			span{
+				color:#4F8AD0;
+			}
+
+		}
+
+	.inputs{
+		padding:10px 0  10px 0 ;
+		input{
+			border-radius:50px;
+			.placeholder{
+				font-size:12px;
+			}
+
+
+		}
+
+	}
+	.radios{
+		input{
+			color:#7B7B7B;
+		}
+	}
+	.progress-bar{
+		progress {
+			width:300px;
+			 background-color: #f3f3f3;
+  			border-radius: 2px;
+  			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+		}
+	}
+	.progressBar2 {
+		display:block;
+		height:50px;
+      	.progressbar {
+      		counter-reset: step;
+	  	}
+	  	.progressbar li {
+	      	list-style-type: none;
+	      	width: 25%;
+	      	float: left;
+	      	font-size: 12px;
+	      	position: relative;
+	      	text-align: center;
+	      	text-transform: uppercase;
+	      	color: #7d7d7d;
+	  	}
+	  	.progressbar li:before {
+	    	width: 30px;
+	      	height: 30px;
+	      	content: counter(step);
+	      	counter-increment: step;
+	      	line-height: 30px;
+	      	border: 15px  solid #7d7d7d;
+	      	display: block;
+	      	text-align: center;
+	      	margin: 0 auto 10px auto;
+	      	border-radius: 50%;
+	      	background-color: white;
+	  	}
+	  	.progressbar li:after {
+	      	width: 100%;
+	      	height: 2px;
+	      	content: '';
+	      	position: absolute;
+	      	background-color: #7d7d7d;
+	      	top: 15px;
+	      	left: -50%;
+	      	z-index: -1;
+	  	}
+	  	.progressbar li:first-child:after {
+	      	content: none;
+	  	}
+	  	.progressbar li.active {
+	      	color: green;
+	  	}
+	  	.progressbar li.active:before {
+	      	border-color: #55b776;
+	  	}
+	  	.progressbar li.active + li:after {
+	      	background-color: #55b776;
+	  	}
+  	}
+  	.buttons{
+  		padding:10px 0  10px 0 ;
+  		button{
+  			width:80px;
+  			height:25px;
+  			border-radius:50px;
+  			background-color:#4F8AD0;
+  			color:white;
+  			border:0px;
+  		}
+  		.btn{
+  			width:80px;
+  			height:25px;
+  			border-radius:5px;
+  			background-color:#4F8AD0;
+  			color:white;
+  			border:0px;
+  		}
+  		.btn3{
+  			width:80px;
+  			height:25px;
+  			border-radius:5px;
+  			background-color:white;
+  			color:black;
+  			border:0px;
+  			border:1px solid #4F8AD0;
+  		}
+  		.btn2{
+  			width:80px;
+  			height:25px;
+  			border-radius:50px;
+  			background-color:white;
+  			color:black;
+  			border:0px;
+  			border:1px solid #4F8AD0;
+  		}
+  		.btn4{
+  			width:80px;
+  			height:24px;
+  			border-radius:5px;
+  			background-color:#4F8AD0;
+  			color:white;
+  			border: 20px;
+    		position: relative;
+  		}
+  		.btn4:after{
+  			content: ''; 
+		    position: absolute;
+		    right: -27px;
+		    top:0px;
+		    border: 12px solid transparent;
+		    border-left: 19px solid #4F8AD0;
+  		}
+  		.btn5{
+  			margin-left:35px;
+  			width:80px;
+  			height:24px;
+  			border-radius:5px;
+  			background-color:#4F8AD0;
+  			color:white;
+  			border: 20px;
+    		position: relative;
+  		}
+  		.btn5:before{
+  			
+  			content: ''; 
+		    position: absolute;
+		    left: -27px;
+		    top:0px;
+		    border: 12px solid transparent;
+		    border-right: 19px solid #4F8AD0;
+  		}
+  	}
+  	
+  		select#soflow, select#soflow-color {
+	   -webkit-appearance: button;
+	   -webkit-border-radius: 2px;
+	   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	   -webkit-padding-end: 20px;
+	   -webkit-padding-start: 2px;
+	   -webkit-user-select: none;
+	   background-position: 97% center;
+	   background-repeat: no-repeat;
+	   border: 1px solid #AAA;
+	   color: #555;
+	   font-size: inherit;
+	   margin: 20px;
+	   overflow: hidden;
+	   padding: 5px 10px;
+	   text-overflow: ellipsis;
+	   white-space: nowrap;
+	   width: 300px;
+
+		}
+
+		select#soflow-color {
+		   color: #fff;
+		   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#779126, #779126 40%, #779126);
+		   color:black;
+		   -webkit-border-radius: 20px;
+		   -moz-border-radius: 20px;
+		   border-radius: 20px;
+		   padding-left: 15px;
+
+		}
+
+  	.misc{
+  		span{
+  			color:#4F8AD0;
+  		}
+	}	  
+}
